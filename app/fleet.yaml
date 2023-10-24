@@ -16,8 +16,16 @@ helm:
 values: 
   #grafana:
     #image: 	docker.io/grafana/grafana:10.1.5
-  prometheus:
-    image: quay.io/prometheus/prometheus:v2.47.1
-  #alertmanager:
+  #prometheus:
+    #image: quay.io/prometheus/prometheus:v2.47.1
+  alertmanager:
+    alertmanagerSpec:
+        ## Image of Alertmanager
+        ##
+        image:
+          registry: quay.io
+          repository: prometheus/alertmanager
+          tag: v0.18.0
+  
     #image: quay.io/prometheus/alertmanager:v0.18.0
     #image: quay.io/prometheus/alertmanager:v0.26.0
