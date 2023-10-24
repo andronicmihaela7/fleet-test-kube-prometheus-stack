@@ -14,6 +14,10 @@ helm:
   repo: "https://prometheus-community.github.io/helm-charts"
 
 values: 
-  alertmanager:
+  #grafana:
+    #image: 	docker.io/grafana/grafana:10.1.5
+  prometheus:
+    image: quay.io/prometheus/prometheus:v2.47.1
+  #alertmanager:
     #image: quay.io/prometheus/alertmanager:v0.18.0
-    image: quay.io/prometheus/alertmanager:v0.26.0
+    #image: quay.io/prometheus/alertmanager:v0.26.0
