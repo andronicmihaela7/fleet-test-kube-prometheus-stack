@@ -13,21 +13,21 @@ helm:
   # An https to a valid Helm repository to download the chart from
   repo: "https://prometheus-community.github.io/helm-charts"
 
-  values: 
+  #values: 
     #grafana:
       #image: 	docker.io/grafana/grafana:10.1.5
     #prometheus:
       #image: quay.io/prometheus/prometheus:v2.47.1
-    alertmanager:
+    #alertmanager:
       #image: quay.io/prometheus/alertmanager:v0.18.0
       #image: quay.io/prometheus/alertmanager:v0.26.0
-      alertmanagerSpec:
-        replicaCount: 1 
-        image:
-          repository: quay.io/prometheus/alertmanager
-          pullPolicy: IfNotPresent
-          # Overrides the image tag whose default is the chart appVersion.
-          tag: v0.25.0
+      #alertmanagerSpec:
+      #  replicaCount: 1 
+      #  image:
+      #    repository: quay.io/prometheus/alertmanager
+      #    pullPolicy: IfNotPresent
+      #    # Overrides the image tag whose default is the chart appVersion.
+      #    tag: v0.25.0
     
 
       
