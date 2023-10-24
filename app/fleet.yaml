@@ -12,3 +12,7 @@ helm:
 
   # An https to a valid Helm repository to download the chart from
   repo: "https://prometheus-community.github.io/helm-charts"
+
+values: 
+  alertmanager:
+    image: quay.io/prometheus/alertmanager:v0.25.0
