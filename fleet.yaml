@@ -1,6 +1,6 @@
-defaultNamespace: default
+#defaultNamespace: default
 
 # Custom helm options
-helm:
+#helm:
   # The release name to use. If empty a generated release name will be used
-  releaseName: pro-oper
+  #releaseName: pro-oper
