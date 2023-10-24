@@ -19,12 +19,15 @@ helm:
     #prometheus:
       #image: quay.io/prometheus/prometheus:v2.47.1
     alertmanager:
-      #replicaCount: 1 
-      image:
-        repository: quay.io/prometheus/alertmanager
-        pullPolicy: IfNotPresent
-        # Overrides the image tag whose default is the chart appVersion.
-        tag: v0.25.0
-    
       #image: quay.io/prometheus/alertmanager:v0.18.0
-      #image: quay.io/prometheus/alertmanager:v0.25.0
+      image: quay.io/prometheus/alertmanager:v0.25.0
+
+      #replicaCount: 1 
+      #image:
+      #  repository: quay.io/prometheus/alertmanager
+      #  pullPolicy: IfNotPresent
+      #  # Overrides the image tag whose default is the chart appVersion.
+      #  tag: v0.25.0
+    
+
+      
